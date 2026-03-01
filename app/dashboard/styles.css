@@ -1,0 +1,528 @@
+/* ============================================================
+   Dashboard Content Styles
+   Uses CSS vars from chrome.css for light/dark theme support
+   ============================================================ */
+
+.dashboard-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.welcome-section {
+    margin-bottom: 32px;
+}
+
+.welcome-section h1 {
+    font-family: var(--font-display, 'Outfit', sans-serif);
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    margin-bottom: 6px;
+    color: var(--ds-text, #fff);
+}
+
+.welcome-section p {
+    color: var(--ds-text-dim, #6b6b6b);
+    font-size: 0.95rem;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--ds-accent), #4f46e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+[data-theme="light"] .text-gradient {
+    background: linear-gradient(135deg, #0a0a0a, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.glass {
+    background: var(--ds-card, rgba(255, 255, 255, 0.025));
+    border: 1px solid var(--ds-border, rgba(255, 255, 255, 0.06));
+    border-radius: 16px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+/* Charts */
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.chart-container {
+    padding: 24px;
+}
+
+.chart-container.full {
+    grid-column: span 2;
+}
+
+.chart-header {
+    margin-bottom: 20px;
+}
+
+.chart-header h3 {
+    font-family: var(--font-display, 'Outfit', sans-serif);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--ds-text, #fff);
+    letter-spacing: -0.02em;
+}
+
+.chart-header p {
+    color: var(--ds-text-muted, #3a3a3a);
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+/* Trends */
+.tech-trends {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trend-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.trend-name {
+    width: 150px;
+    font-size: 0.83rem;
+    color: var(--ds-text-dim, #6b6b6b);
+    font-weight: 500;
+}
+
+.trend-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--ds-hover, rgba(255, 255, 255, 0.04));
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.trend-bar .fill {
+    height: 100%;
+    background: var(--ds-accent);
+    border-radius: 3px;
+    transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.trend-val {
+    width: 50px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-align: right;
+    color: var(--ds-accent);
+}
+
+/* Skills */
+.skills-page {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.page-header h1 {
+    font-family: var(--font-display, 'Outfit', sans-serif);
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    margin-bottom: 4px;
+    color: var(--ds-text, #fff);
+}
+
+.page-header p {
+    color: var(--ds-text-dim, #6b6b6b);
+    font-size: 0.9rem;
+    margin-bottom: 28px;
+}
+
+.skills-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 28px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display, 'Outfit', sans-serif);
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--ds-text, #fff);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.sidebar-section {
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+/* Jobs */
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.job-item {
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--ds-border, rgba(255, 255, 255, 0.04));
+}
+
+.job-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.job-main h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ds-text, #fff);
+    margin: 0;
+}
+
+.demand-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.demand-badge.very-high {
+    background: rgba(16, 185, 129, 0.08);
+    color: #10b981;
+}
+
+.demand-badge.emerging {
+    background: var(--ds-accent-soft);
+    color: var(--ds-accent);
+}
+
+.demand-badge.high {
+    background: rgba(245, 158, 11, 0.08);
+    color: #f59e0b;
+}
+
+.job-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: var(--ds-text-dim, #6b6b6b);
+}
+
+.job-tags {
+    display: flex;
+    gap: 6px;
+}
+
+.job-tags span {
+    font-size: 0.65rem;
+    color: var(--ds-text-dim, #6b6b6b);
+    background: var(--ds-hover, rgba(255, 255, 255, 0.03));
+    border: 1px solid var(--ds-border, rgba(255, 255, 255, 0.06));
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.view-all-btn {
+    width: 100%;
+    margin-top: 20px;
+    background: var(--ds-accent-soft);
+    border: 1px solid var(--ds-accent-border);
+    color: var(--ds-accent);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.view-all-btn:hover {
+    background: var(--ds-hover);
+    border-color: var(--ds-accent-border);
+}
+
+/* Skill Bars */
+.skill-row {
+    margin-bottom: 18px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.82rem;
+    color: var(--ds-text-dim, #6b6b6b);
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+.progress-bg {
+    height: 5px;
+    background: var(--ds-hover, rgba(255, 255, 255, 0.04));
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--ds-accent);
+    border-radius: 3px;
+    transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Alerts */
+.alert-section {
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.alert-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert-header h4 {
+    font-family: var(--font-display, 'Outfit', sans-serif);
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--ds-text, #fff);
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.badge {
+    background: rgba(239, 68, 68, 0.08);
+    color: #f87171;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 800;
+}
+
+.alert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.alert-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background: var(--ds-hover, rgba(255, 255, 255, 0.02));
+    border-radius: 12px;
+    border: 1px solid var(--ds-border, rgba(255, 255, 255, 0.04));
+    transition: border-color 0.2s;
+}
+
+.alert-item:hover {
+    border-color: var(--ds-accent-border, rgba(255, 255, 255, 0.08));
+}
+
+.student-pill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 200px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: var(--ds-accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.78rem;
+    font-family: var(--font-display, 'Outfit', sans-serif);
+}
+
+[data-theme="light"] .avatar {
+    background: #0a0a0a;
+    color: #fff;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ds-text, #fff);
+}
+
+.email {
+    font-size: 0.7rem;
+    color: var(--ds-text-muted, #3a3a3a);
+}
+
+.metrics {
+    display: flex;
+    gap: 28px;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.metric span:first-child {
+    font-size: 0.62rem;
+    color: var(--ds-text-muted, #3a3a3a);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.val {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--ds-text, #fff);
+}
+
+.val.low {
+    color: #f87171;
+}
+
+.action-btn {
+    background: var(--ds-hover, rgba(255, 255, 255, 0.03));
+    border: 1px solid var(--ds-border, rgba(255, 255, 255, 0.06));
+    color: var(--ds-text-dim, #6b6b6b);
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    background: var(--ds-accent-soft);
+    border-color: var(--ds-accent-border);
+    color: var(--ds-accent);
+}
+
+/* Insights */
+.insights-section {
+    padding: 24px;
+    margin-top: 20px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.section-header h4 {
+    font-family: var(--font-display, 'Outfit', sans-serif);
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--ds-text, #fff);
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.insights-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.insight-card {
+    padding: 16px;
+    background: var(--ds-hover, rgba(255, 255, 255, 0.02));
+    border-radius: 12px;
+    border: 1px solid var(--ds-border, rgba(255, 255, 255, 0.04));
+    transition: border-color 0.2s;
+}
+
+.insight-card:hover {
+    border-color: var(--ds-accent-border, rgba(255, 255, 255, 0.08));
+}
+
+.insight-badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: var(--ds-accent-soft);
+    color: var(--ds-accent);
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.insight-card h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ds-text, #fff);
+    margin: 0 0 6px;
+}
+
+.insight-card p {
+    font-size: 0.82rem;
+    color: var(--ds-text-dim, #6b6b6b);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-container.full {
+        grid-column: span 1;
+    }
+
+    .skills-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .insights-list {
+        grid-template-columns: 1fr;
+    }
+}

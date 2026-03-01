@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id            String    @id @default(uuid())
+  name          String?
+  email         String?   @unique
+  password      String?
+  role          String    @default("STUDENT")
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  enrollments   Enrollment[]
+  studentSkills StudentSkill[]
+  dropoutRisk   DropoutRisk?
+}
+
+model Course {
+  id          String       @id @default(uuid())
+  title       String
+  description String
+  facultyId   String?
+  enrollments Enrollment[]
+}
+
+model Enrollment {
+  id                   String   @id @default(uuid())
+  studentId            String
+  courseId             String
+  grade                Float?
+  attendance           Float?   @default(100.0)
+  assignmentCompletion Float?   @default(100.0)
+  student              User     @relation(fields: [studentId], references: [id])
+  course               Course   @relation(fields: [courseId], references: [id])
+  updatedAt            DateTime @updatedAt
+
+  @@unique([studentId, courseId])
+}
+
+model Skill {
+  id            String         @id @default(uuid())
+  name          String
+  category      String
+  demandLevel   Int            @default(1)
+  studentSkills StudentSkill[]
+}
+
+model StudentSkill {
+  id          String @id @default(uuid())
+  studentId   String
+  skillId     String
+  proficiency Int    @default(0)
+  student     User   @relation(fields: [studentId], references: [id])
+  skill       Skill  @relation(fields: [skillId], references: [id])
+
+  @@unique([studentId, skillId])
+}
+
+model DropoutRisk {
+  id           String    @id @default(uuid())
+  studentId    String    @unique
+  riskLevel    String    @default("LOW")
+  probability  Float     @default(0.0)
+  reason       String?
+  lastAnalysis DateTime  @default(now())
+  student      User      @relation(fields: [studentId], references: [id])
+}

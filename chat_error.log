@@ -1,0 +1,29 @@
+
+Key Length: 39, Start: AIzaS
+
+[2026-02-27T11:59:26.839Z] Chat Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+Stack: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (D:\Afrith\Projects\Skill-main\.next\dev\server\chunks\node_modules_debdb5ed._.js:15549:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async makeRequest (D:\Afrith\Projects\Skill-main\.next\dev\server\chunks\node_modules_debdb5ed._.js:15521:9)
+    at async generateContent (D:\Afrith\Projects\Skill-main\.next\dev\server\chunks\node_modules_debdb5ed._.js:15963:22)
+    at async POST (D:\Afrith\Projects\Skill-main\.next\dev\server\chunks\[root-of-the-server]__bb892150._.js:108:24)
+    at async AppRouteRouteModule.do (D:\Afrith\Projects\Skill-main\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:37866)
+    at async AppRouteRouteModule.handle (D:\Afrith\Projects\Skill-main\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:5:45156)
+    at async responseGenerator (D:\Afrith\Projects\Skill-main\.next\dev\server\chunks\node_modules_debdb5ed._.js:16874:38)
+    at async AppRouteRouteModule.handleResponse (D:\Afrith\Projects\Skill-main\node_modules\next\dist\compiled\next-server\app-route-turbo.runtime.dev.js:1:191938)
+    at async handleResponse (D:\Afrith\Projects\Skill-main\.next\dev\server\chunks\node_modules_debdb5ed._.js:16937:32)
+    at async Module.handler (D:\Afrith\Projects\Skill-main\.next\dev\server\chunks\node_modules_debdb5ed._.js:16990:13)
+    at async DevServer.renderToResponseWithComponentsImpl (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\base-server.js:1442:9)
+    at async DevServer.renderPageComponent (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\base-server.js:1494:24)
+    at async DevServer.renderToResponseImpl (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\base-server.js:1544:32)
+    at async DevServer.pipeImpl (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\base-server.js:1038:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\next-server.js:395:17)
+    at async DevServer.handleRequestImpl (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\base-server.js:929:17)
+    at async D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\dev\next-dev-server.js:387:20
+    at async Span.traceAsyncFn (D:\Afrith\Projects\Skill-main\node_modules\next\dist\trace\trace.js:157:20)
+    at async DevServer.handleRequest (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\dev\next-dev-server.js:383:24)
+    at async invokeRender (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\lib\router-server.js:248:21)
+    at async handleRequest (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\lib\router-server.js:447:24)
+    at async requestHandlerImpl (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\lib\router-server.js:496:13)
+    at async Server.requestListener (D:\Afrith\Projects\Skill-main\node_modules\next\dist\server\lib\start-server.js:226:13)
