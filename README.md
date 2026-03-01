@@ -1,54 +1,47 @@
 <div align="center">
 
-<img src="public/logo.png" width="120" />
+<img src="./public/logo.png" width="90" />
 
 # SkillSync
 
-### 🚀 AI-Powered Smart Education Platform
+### AI-Powered Smart Education Platform
 
 <p>
-Transforming education with <b>predictive intelligence</b>, <b>real-time analytics</b>, and <b>career-driven learning</b>.
-</p>
-
-<p>
-  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" />
-  <img src="https://img.shields.io/badge/Firebase-Backend-orange?style=for-the-badge&logo=firebase" />
-  <img src="https://img.shields.io/badge/AI-Driven-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+Transforming education with intelligent analytics, predictive insights, and career-focused learning.
 </p>
 
 </div>
 
 ---
 
-## 🧠 What is SkillSync?
+## 🚀 Overview
 
-**SkillSync** is a next-generation intelligent education platform designed to bridge the gap between **academic learning and industry readiness**.
+**SkillSync** is a modern AI-powered education platform that helps institutions move beyond traditional grading systems.
 
-Unlike traditional systems, SkillSync leverages **AI-driven insights** to:
+It enables:
 
-* 📉 Predict student risks
-* 🧩 Analyze skill gaps
-* 🎯 Recommend personalized growth paths
+* 📉 Early detection of at-risk students
+* 🧩 Skill gap identification based on industry needs
+* 🎯 Personalized career and learning roadmaps
 
 ---
 
-## ✨ Core Highlights
+## ✨ Features
 
-🚨 **AI Dropout Prediction**
-Identify at-risk students before failure happens
+* **Predictive Dropout Detection**
+  Identify students at risk using performance insights
 
-📊 **Real-Time Analytics Dashboard**
-Track performance, attendance, and engagement
+* **Skill Intelligence Engine**
+  Align academic progress with real-world job requirements
 
-🧠 **Skill Intelligence Engine**
-Align student skills with real-world job demand
+* **Personalized Learning Paths**
+  Generate adaptive roadmaps based on student goals
 
-🎯 **Personalized Learning Roadmaps**
-Adaptive recommendations based on performance
+* **Role-Based Dashboards**
+  Separate interfaces for Students, Faculty, and Admin
 
-🔐 **Role-Based System**
-Student • Faculty • Admin dashboards
+* **Real-Time Analytics**
+  Monitor performance, attendance, and engagement
 
 ---
 
@@ -57,7 +50,7 @@ Student • Faculty • Admin dashboards
 ### 🎓 Student Dashboard
 
 <p align="center">
-  <img src="public/screenshots/student.png" width="90%" />
+  <img src="./screenshots/student.png" width="90%" />
 </p>
 
 ---
@@ -65,7 +58,7 @@ Student • Faculty • Admin dashboards
 ### 👨‍🏫 Faculty Dashboard
 
 <p align="center">
-  <img src="public/screenshots/faculty.png" width="90%" />
+  <img src="./screenshots/faculty.png" width="90%" />
 </p>
 
 ---
@@ -73,36 +66,33 @@ Student • Faculty • Admin dashboards
 ### 🛠️ Admin Dashboard
 
 <p align="center">
-  <img src="public/screenshots/admin.png" width="90%" />
+  <img src="./screenshots/admin.png" width="90%" />
 </p>
 
 ---
 
 ## ⚙️ Tech Stack
 
-| Layer      | Technology           |
-| ---------- | -------------------- |
-| Frontend   | Next.js 15, React 19 |
-| Backend    | Firebase (Firestore) |
-| Auth       | NextAuth.js          |
-| Charts     | Recharts             |
-| Animations | Framer Motion        |
-| Styling    | CSS Modules          |
+* **Frontend:** Next.js 15, React 19
+* **Backend:** Firebase (Firestore)
+* **Authentication:** NextAuth.js
+* **Visualization:** Recharts
+* **Animation:** Framer Motion
 
 ---
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone Repository
+### 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/skillsync.git
-cd skillsync
+git clone https://github.com/dev-afrith/Skill_Sync.git
+cd Skill_Sync
 ```
 
 ---
 
-### 2️⃣ Install Dependencies
+### 2. Install Dependencies
 
 ```bash
 npm install
@@ -110,7 +100,7 @@ npm install
 
 ---
 
-### 3️⃣ Setup Environment
+### 3. Setup Environment Variables
 
 Create `.env.local`:
 
@@ -128,39 +118,30 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 
 ---
 
-### 4️⃣ Run Project
+### 4. Run the Project
 
 ```bash
 npm run dev
 ```
 
-👉 http://localhost:4000
+Open 👉 http://localhost:4000
 
 ---
 
 ## 🔐 Security
 
-* Environment variables are protected
-* Firebase rules should be configured properly
-* Authentication handled via NextAuth
+* Environment variables are not committed
+* Firebase rules should be properly configured
+* Authentication handled securely via NextAuth
 
 ---
 
 ## 🚀 Deployment
 
-Deploy instantly using:
+Deploy easily using:
 
-* ▲ Vercel (Recommended)
+* Vercel (recommended)
 * Firebase Hosting
-
----
-
-## 🧠 Future Scope
-
-* 🤖 Advanced ML-based recommendations
-* 📱 Mobile application version
-* 📊 Advanced analytics dashboards
-* 🌐 Multi-institution support
 
 ---
 
@@ -168,22 +149,20 @@ Deploy instantly using:
 
 **Muhammad Afrith**
 
-> Building impactful tech solutions with real-world value 🚀
-
 ---
 
 ## ⭐ Support
 
 If you like this project:
 
-👉 Star the repository
-👉 Share with others
-👉 Contribute
+* ⭐ Star the repository
+* 📢 Share with others
+* 🤝 Contribute
 
 ---
 
 <div align="center">
 
-🔥 Built with passion • Powered by intelligence 🔥
+Built with passion • Designed for impact
 
 </div>
