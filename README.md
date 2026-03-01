@@ -1,72 +1,189 @@
 <div align="center">
-  <img src="public/favicon.ico" alt="SkillSync Logo" width="80" height="80" />
-  <h1>SkillSync</h1>
-  <p><strong>AI-Powered Smart Education Platform</strong></p>
-  <p>Bridge the gap between academic progress and industry requirements with real-time analytics, AI-driven dropout prediction, and personalized career roadmaps.</p>
+
+<img src="./public/favicon.ico" width="100" />
+
+# SkillSync
+
+### 🚀 AI-Powered Smart Education Platform
+
+<p>
+Transforming education with <b>predictive intelligence</b>, <b>real-time analytics</b>, and <b>career-driven learning</b>.
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" />
+  <img src="https://img.shields.io/badge/Firebase-Backend-orange?style=for-the-badge&logo=firebase" />
+  <img src="https://img.shields.io/badge/AI-Driven-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+</p>
+
 </div>
 
-<br/>
+---
 
-## 🌟 Overview
+## 🧠 What is SkillSync?
 
-SkillSync is a comprehensive, full-stack Next.js application designed for modern educational institutions. It empowers students, faculty, and administrators with intelligent insights, moving beyond traditional grading to focus on real-world skill alignment and proactive student retention.
+**SkillSync** is a next-generation intelligent education platform designed to bridge the gap between **academic learning and industry readiness**.
 
-## ✨ Key Features
+Unlike traditional systems, SkillSync leverages **AI-driven insights** to:
 
-- **Predictive Analytics for Retention**: AI models identify at-risk students before dropout patterns emerge, allowing for early intervention.
-- **Skill Gap Analyzer**: Compares student proficiency against live job market demands, highlighting exact skills needed for career readiness.
-- **Dynamic Learning Roadmaps**: Generates personalized learning paths tailored to a student's career goals and current academic standing.
-- **Role-Based Access Control**: Secure, tailor-made dashboards for Students, Faculty, and Administrators.
-- **Real-Time Dashboards**: Track engagement, grades, and attendance in real-time with granular, visually stunning analytics.
-- **Curriculum vs Industry Alignment**: AI-driven analysis comparing institutional curriculum with current industry trends.
+* 📉 Predict student risks
+* 🧩 Analyze skill gaps
+* 🎯 Recommend personalized growth paths
 
-## 🛠️ Technology Stack
+---
 
-- **Frontend**: Next.js 15 (App Router), React 19
-- **Authentication**: NextAuth.js (Credentials Provider)
-- **Database & Backend**: Firebase (Cloud Firestore)
-- **Styling**: Vanilla CSS, CSS Modules, Global Design Tokens
-- **Data Visualization**: Recharts
-- **Icons**: Lucide React
-- **Animation**: Framer Motion
+## ✨ Core Highlights
+
+🚨 **AI Dropout Prediction**
+Identify at-risk students before failure happens
+
+📊 **Real-Time Analytics Dashboard**
+Track performance, attendance, and engagement
+
+🧠 **Skill Intelligence Engine**
+Align student skills with real-world job demand
+
+🎯 **Personalized Learning Roadmaps**
+Adaptive recommendations based on performance
+
+🔐 **Role-Based System**
+Student • Faculty • Admin dashboards
+
+---
+
+## 🖼️ Application Preview
+
+### 🎓 Student Dashboard
+
+<p align="center">
+  <img src="./public/screenshots/student.png" width="90%" />
+</p>
+
+---
+
+### 👨‍🏫 Faculty Dashboard
+
+<p align="center">
+  <img src="./public/screenshots/faculty.png" width="90%" />
+</p>
+
+---
+
+### 🛠️ Admin Dashboard
+
+<p align="center">
+  <img src="./public/screenshots/admin.png" width="90%" />
+</p>
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer      | Technology           |
+| ---------- | -------------------- |
+| Frontend   | Next.js 15, React 19 |
+| Backend    | Firebase (Firestore) |
+| Auth       | NextAuth.js          |
+| Charts     | Recharts             |
+| Animations | Framer Motion        |
+| Styling    | CSS Modules          |
+
+---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 1️⃣ Clone Repository
 
-Ensure you have Node.js (v18.17.0 or higher) installed.
+```bash
+git clone https://github.com/your-username/skillsync.git
+cd skillsync
+```
 
-### Installation
+---
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/skillsync.git
-   cd skillsync
-   ```
+### 2️⃣ Install Dependencies
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+```bash
+npm install
+```
 
-3. **Configure Environment Variables:**
-   Create a `.env.local` file in the root directory and add the necessary Firebase and NextAuth credentials (see `DOCUMENTATION.md` for details).
+---
 
-4. **Start the Development Server:**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
+### 3️⃣ Setup Environment
 
-5. Open [http://localhost:4000](http://localhost:4000) (or the port specified in your console) in your browser.
+Create `.env.local`:
 
-## 📚 Documentation
+```env
+NEXTAUTH_SECRET=your_secret
+NEXTAUTH_URL=http://localhost:4000
 
-For detailed information on architecture, the AI intelligence layer, database schema, and deployment instructions, please refer to the [`DOCUMENTATION.md`](DOCUMENTATION.md) file.
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+```
 
-## 📄 License
+---
 
-This project is licensed under the MIT License.
+### 4️⃣ Run Project
+
+```bash
+npm run dev
+```
+
+👉 http://localhost:4000
+
+---
+
+## 🔐 Security
+
+* Environment variables are protected
+* Firebase rules should be configured properly
+* Authentication handled via NextAuth
+
+---
+
+## 🚀 Deployment
+
+Deploy instantly using:
+
+* ▲ Vercel (Recommended)
+* Firebase Hosting
+
+---
+
+## 🧠 Future Scope
+
+* 🤖 Advanced ML-based recommendations
+* 📱 Mobile application version
+* 📊 Advanced analytics dashboards
+* 🌐 Multi-institution support
+
+---
+
+## 👨‍💻 Author
+
+**Muhammad Afrith**
+
+> Building impactful tech solutions with real-world value 🚀
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+👉 Star the repository
+👉 Share with others
+👉 Contribute
+
+---
+
+<div align="center">
+
+🔥 Built with passion • Powered by intelligence 🔥
+
+</div>
