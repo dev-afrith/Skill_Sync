@@ -18,23 +18,58 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  title: {
+    default: "SkillSync",
+    template: "%s | SkillSync",
+  },
+  description:
+    "SkillSync is an AI-powered smart education platform that predicts dropout risks, analyzes skill gaps, and creates personalized career roadmaps aligned with real-world industry demands.",
+
+  keywords: [
+    "AI education platform",
+    "student analytics",
+    "skill gap analysis",
+    "career roadmap",
+    "Next.js education app",
+    "smart learning system",
+  ],
+
+  authors: [{ name: "Muhammad Afrith" }],
+  creator: "Muhammad Afrith",
+
+  icons: {
+    icon: "/logo.png",          // your new logo
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
+
+  openGraph: {
     title: "SkillSync — AI-Powered Smart Education Platform",
     description:
-        "SkillSync aligns education with industry realities. Predict dropout risks, analyze skill gaps, and generate personalized career roadmaps using real-time job market data.",
-    keywords: [
-        "education platform",
-        "AI learning",
-        "skill gap analysis",
-        "career roadmap",
-        "smart education",
+      "Transform education with AI-driven insights. Predict risks, analyze skills, and build personalized learning paths.",
+    url: "https://your-domain.com", // update after deploy
+    siteName: "SkillSync",
+    images: [
+      {
+        url: "/logo.png", // can later replace with banner image
+        width: 1200,
+        height: 630,
+        alt: "SkillSync Platform Preview",
+      },
     ],
-    authors: [{ name: "SkillSync" }],
-    openGraph: {
-        title: "SkillSync — AI-Powered Smart Education Platform",
-        description:
-            "The ultimate Smart Education Platform that predicts dropout risks, analyzes skill gaps, and generates personalized career roadmaps.",
-        type: "website",
-    },
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "SkillSync — Smart Education Platform",
+    description:
+      "AI-powered platform for student analytics, skill tracking, and career growth.",
+    images: ["/logo.png"],
+  },
+
+  metadataBase: new URL("https://your-domain.com"), // change after deploy
 };
 
 export default function RootLayout({

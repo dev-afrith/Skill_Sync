@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./public/favicon.ico" width="100" />
+<img src="public/logo.png" width="120" />
 
 # SkillSync
 
@@ -57,7 +57,7 @@ Student • Faculty • Admin dashboards
 ### 🎓 Student Dashboard
 
 <p align="center">
-  <img src="./public/screenshots/student.png" width="90%" />
+  <img src="public/screenshots/student.png" width="90%" />
 </p>
 
 ---
@@ -65,7 +65,7 @@ Student • Faculty • Admin dashboards
 ### 👨‍🏫 Faculty Dashboard
 
 <p align="center">
-  <img src="./public/screenshots/faculty.png" width="90%" />
+  <img src="public/screenshots/faculty.png" width="90%" />
 </p>
 
 ---
@@ -73,7 +73,7 @@ Student • Faculty • Admin dashboards
 ### 🛠️ Admin Dashboard
 
 <p align="center">
-  <img src="./public/screenshots/admin.png" width="90%" />
+  <img src="public/screenshots/admin.png" width="90%" />
 </p>
 
 ---
