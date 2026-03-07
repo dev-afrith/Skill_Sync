@@ -73,78 +73,62 @@ It empowers institutions with intelligent tools to:
 
 ## ⚙️ Tech Stack
 
-| Layer     | Technology           |
-| --------- | -------------------- |
-| Frontend  | Next.js 15, React 19 |
-| Backend   | Firebase (Firestore) |
-| Auth      | NextAuth.js          |
-| Charts    | Recharts             |
-| Animation | Framer Motion        |
-| Styling   | CSS Modules          |
+| Layer     | Technology                      |
+| --------- | ------------------------------- |
+| Frontend  | Next.js 15, React 19            |
+| Backend   | Node.js, Express, TypeScript    |
+| Database  | SQLite with Prisma ORM          |
+| AI        | Google Gemini API               |
+| Auth      | NextAuth.js                     |
+| Styling   | Vanilla CSS, Framer Motion      |
+
+---
+
+## 🏗️ Architecture
+
+The project is structured into three independent service directories:
+
+- **`backend/`**: Express server handling API logic and AI processing.
+- **`frontend/`**: Next.js client application.
+- **`database/`**: Shared Prisma schema and SQLite database.
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone Repository
+### 1. Backend Setup
+1. Navigate to the backend folder:
+   ```bash
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Initialize the database:
+   ```bash
+   npx prisma generate --schema=../database/prisma/schema.prisma
+   ```
+4. Start the backend:
+   ```bash
+   npm run dev
+   ```
+   *Runs on 👉 http://localhost:3001*
 
-```bash
-git clone https://github.com/dev-afrith/Skill_Sync.git
-cd Skill_Sync
-```
-
----
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-### 3. Configure Environment
-
-Create `.env.local`:
-
-```env
-NEXTAUTH_SECRET=your_secret
-NEXTAUTH_URL=http://localhost:4000
-
-NEXT_PUBLIC_FIREBASE_API_KEY=
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
-NEXT_PUBLIC_FIREBASE_APP_ID=
-```
-
----
-
-### 4. Run the Application
-
-```bash
-npm run dev
-```
-
-Access at 👉 http://localhost:4000
-
----
-
-## 🚀 Deployment
-
-| Platform         | Description                                            |
-| ---------------- | ------------------------------------------------------ |
-| Vercel           | Seamless deployment with automatic builds and previews |
-| Firebase Hosting | Optimized for backend-integrated deployment            |
-
----
-
-## 🔐 Security
-
-* Environment variables are securely managed
-* Firebase access rules should be configured for production
-* Authentication handled via NextAuth
+### 2. Frontend Setup
+1. Open a new terminal and navigate to the frontend folder:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+3. Start the frontend:
+   ```bash
+   npm run dev
+   ```
+   *Runs on 👉 http://localhost:4000*
 
 ---
 
